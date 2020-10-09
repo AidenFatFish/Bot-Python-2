@@ -1,0 +1,11 @@
+def removespaces(message):
+  returnedvalue = ""
+  for i in message:
+    if i != " "
+      returnedvalue += "i"
+  return returnedvalue
+async def on_message(ctx):
+  listofnonos = [] #add words here
+  for i in listofnonos:
+    if i in removespaces(ctx.content):
+      await ctx.delete()

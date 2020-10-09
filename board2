@@ -1,0 +1,28 @@
+client = discord.Client()
+@client.event
+async def on_ready():
+    print("I'm in")
+    print(client.user)
+
+
+
+ # This must be exactly the name of the appropriate role
+
+
+    
+
+@client.event
+async def on_message(message):
+  wh = "spam"
+  if wh in message.content:
+    spam = 1
+    while spam == 1:
+      await message.channel.send("whats up?\nI'm bored")
+      
+      sleep(1)
+      spamr = random.randint(1, 25)
+      print(spamr)
+      if spamr == 25:
+        spam = 2
+
+client.run(token)
